@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Patment Form</h1>
+        <p>Required Filled are followed by *</p>
+        <h2>Contact Imformation</h2>
+        <p>Name* : <input type="text" name="name" required></p>
+        <p>
+            <fieldset>
+            Male <input type="radio" name="gender"id = "">
+            Female <input type="radio" name="gender"id = "">
+            Transgender <input type="radio" name="gender"id = "">
+            </fieldset>
+            <p>Address <textarea name="address" id="address" cols="100" rows="7"></textarea></p>
+        </p>
+        <p>Email <input type="email" name = "Email" id = "email"></p>
+        <p>Pin code: <input type="number" name="pincode" id="pincode"></p>
+        <hr>
+        <h2>
+            Payment Imformation
+        </h2>
+        <p>Card type: 
+            <select name="card_type" id="card_type">
+                <option value="">--Select a card type</option>
+                <option value="visa">Visa</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number: 
+            <input type="number" name="Card_Number" id = "Card_Number">
+        </p>
+        <p>
+            Expairy Date: <input type="date" name="exp_date" id="exp_date">
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" id="cvv">
+        </p>
+        <input type="submit" value="Pay Naw">
+    </form>
+</body>
+</html>
