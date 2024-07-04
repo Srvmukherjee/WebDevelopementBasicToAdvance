@@ -1,0 +1,58 @@
+/* 
+SYNTAX OF CSS (values)
+1. Defined ; 
+2. PreDefined 
+color: green
+font - family: "TimesNew Roman",serif
+text-align : center
+
+
+link css in HTML
+1. INLINE: under htnl body
+2. INTERNAL: defined under HTML
+3. EXTERNAL
+*/
+
+/* Css sytax:
+
+selector    Declaration     Declaration
+    h1   { Color : blue  ; font-size : 12px;}
+         Property  Value    Property   Value
+
+COMBINED SELECTOR:
+    h1,p,span{      
+        Propertices     
+    }
+ */
+
+/*  For class: .className{-------propertics---------}   */
+.header1{
+    color:blueviolet;
+    size-adjust:inherit;
+}
+/* Pseudo class selector */
+.header1:hover{
+    color:black;
+    background-color: aqua;
+    
+}
+/*  For id: #idName{------propertics--------}   */
+#header{
+    color:chocolate
+}
+/* Attribute selector */
+a[href="lec5.css"]{
+    color:brown
+}
+p::first-line{
+    color:blue
+}
+/* Combined Selector */
+article > p{
+    color:cadetblue
+}
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
