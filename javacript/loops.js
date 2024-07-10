@@ -8,9 +8,14 @@
 // }
 
 // Guess the number:
-let num1 = 4;
-let userNum = prompt("Guess the number:");
-while( userNum != num1){
- userNum = prompt("Guess again") ;  
+// let num1 = 4;
+// let userNum = prompt("Guess the number:");
+// while( userNum != num1){
+//  userNum = prompt("Guess again") ;  
+// }
+// console.log("Congrats");
+
+let arr=[20,15,12,42];
+for(let i=0; i<arr.length;i++){
+    console.log(arr[i])
 }
-console.log("Congrats");
