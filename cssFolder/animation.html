@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS IN CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+        .box {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+        }
+        .box2 {
+            width: 350px;
+            height: 80px;
+            background-color: green;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: bounce 2s infinite;
+        }
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+            to {
+                top: 0;
+                left: 800px;
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                left: 0;
+            }
+            50% {
+                left: calc(100vw - 50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box2"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
